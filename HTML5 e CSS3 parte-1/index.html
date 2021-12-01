@@ -5,49 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style-home.css">
+    <link rel="stylesheet" href="../HTML5 e CSS3 parte-2/resources/reset.css">
+    <link rel="stylesheet" href="../HTML5 e CSS3 parte-2/style.css">
     <title>Document</title>
 </head>
 
 <body>
-     <!-- ============== Barra de Navegação ============== -->
+    <!-- ============== Barra de Navegação ============== -->
     <header>
-        <h1 class="tituloPrincipal">Barbearia Alura</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="../HTML5 e CSS3 parte-2/produtos.html">Produtos</a></li>
-            <li><a href="../HTML5 e CSS3 parte-3/contato.html">Contato</a></li>
-        </ul>
+        <div class="caixa">
+            <h1><img src="../HTML5 e CSS3 parte-2/resources/logo.png" alt=""></h1>
+            <nav>
+                <!-- Menu itens -->
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="../HTML5 e CSS3 parte-2/produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="../HTML5 e CSS3 parte-3/contato.html"> Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <!-- ============== Imagem Principal ============== -->
-    <img id="banner"
+
+    <img class="banner"
         src="https://donalcides.com.br/wp-content/uploads/2021/07/aumentar-o-faturamento-da-sua-barbearia-748x320.jpg"
         alt="">
-    <!-- ============== Sobre a Barbearia ============== -->
-    <div class="principal">
-        <h2>Sobre a Barbearia Alura</h2>
-        <p>Localizada no coração da cidade a <strong> Barbearia Alura </strong> traz para o mercado
-            o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já
-            é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-        <p id="missao"><em>Nossa missão é: "<strong>Proporcionar auto-estima e qualidade de vida aos
-                    clientes</strong>".</em></p>
-
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
-            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos
-            clientes.</p>
-    </div>
     <!-- ============== Sobre a Barbearia ============== -->
-    <div class="beneficios">
-        <h3>Beneficios</h3>
-        <ul>
-            <li>Atendimento aos Clientes</li>
-            <li>Espaço diferenciado</li>
-            <li>Localização</li>
-            <li>Profissionais qualificados</li>
-        </ul>
-        <img class="imagensBeneficios" src="./resources/beneficios.jpg" alt="">
-    </div>
+    <main>
+        <section class="principal">
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+            <img class="utensilios" src="../HTML5 e CSS3 parte-2/resources/utensilios.jpg"
+                alt="Utensilios de um barbeiro">
+
+            <p>Localizada no coração da cidade a <strong> Barbearia Alura </strong> traz para o mercado
+                o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já
+                é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+            <p id="missao"><em>Nossa missão é: "<strong>Proporcionar auto-estima e qualidade de vida aos
+                        clientes</strong>".</em></p>
+
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
+                O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos
+                clientes.</p>
+        </section>
+
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso Estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade</p>
+
+            <!-- Mapa da Barbearia  -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4499774665464!2d-46
+                .63452058559565!3d-23.588189868467417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1
+                m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia
+                !5e0!3m2!1spt-BR!2sbr!4v1638391841069!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <!-- ============== Sobre a Barbearia ============== -->
+        <section class="beneficios">
+            <h3 class="titulo-principal">Beneficios</h3>
+
+            <ul class="lista-beneficios">
+                <li>Atendimento aos Clientes</li>
+                <li>Espaço diferenciado</li>
+                <li>Localização</li>
+                <li>Profissionais qualificados</li>
+            </ul>
+            <img class="imagensBeneficios" src="./resources/beneficios.jpg" alt="">
+            
+            <!--  Video da Barbearia  -->
+            <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="../HTML5 e CSS3 parte-2/resources/logo-branco.png" alt="">
+        <p class="copyright">&copy; Copyright Barbearia-Alura 2019</p>
+    </footer>
+
 </body>
 
 </html>
