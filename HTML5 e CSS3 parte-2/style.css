@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    background: #BBBBBB;
     padding: 20px 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -97,14 +96,12 @@ footer {
     margin-top: 20px;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
     margin: 40px 0;
+    width: 100%;
+    margin: 0 25%;
 }
+
 
 form label, form legend{
     display: block;
@@ -143,6 +140,7 @@ form label, form legend{
 
 table {
     margin: 20px 0 40px;
+    margin: 5em 40%;
 }
 
 thead {
@@ -162,8 +160,15 @@ td, th {
     width: 100%;
 }
 
-.titulo-principal {
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
 
+}
+
+.titulo-principal {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
@@ -189,13 +194,14 @@ td, th {
     font-style: italic;
 }
 
-.imagensBeneficios {
-    width: 60%;
-    box-shadow: 0 0 5px black;
-}
-
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
@@ -203,8 +209,89 @@ td, th {
     text-align: center;
 }
 
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:before {
+    content: "★";
+    margin: 0 10px 0 0;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagens-beneficios {
+    width: 60%;
+    box-shadow: 0 0 5px black;
+}
+
 .video {
     width: 560px;
-    margin: 20px auto;
+    margin: 2em auto;
     box-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 480px){
+    
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    .beneficios {
+        margin: 0 0 3em 0 ;
+    }
+
+    .lista-beneficios, .imagens-beneficios {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .produtos li {
+        display: block;
+        margin: 10px 4em;
+
+    }
+
+    form {
+        margin: 0;
+    }
+
+    table {
+        margin: 3em 0;
+    }
+
+    form .input-padrao{
+        width: 85%;
+
+    }
+    .enviar {
+        width: 11em;
+    }
 }

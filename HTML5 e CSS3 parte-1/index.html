@@ -33,7 +33,6 @@
     </header>
 
     <!-- ============== Imagem Principal ============== -->
-
     <img class="banner"
         src="https://donalcides.com.br/wp-content/uploads/2021/07/aumentar-o-faturamento-da-sua-barbearia-748x320.jpg"
         alt="">
@@ -63,35 +62,43 @@
             <p>Nosso estabelecimento está localizado no coração da cidade</p>
 
             <!-- Mapa da Barbearia  -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4499774665464!2d-46
-                .63452058559565!3d-23.588189868467417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1
-                m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia
-                !5e0!3m2!1spt-BR!2sbr!4v1638391841069!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;"
-                allowfullscreen="" loading="lazy"></iframe>
+            <div class="mapa-conteudo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.211951343806
+                    !2d-38.429006387964606!3d-12.933027441303992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768
+                    !4f13.1!3m3!1m2!1s0x716109f62f0232f%3A0xf90245687d144ce!2sShopping%20Ponto%2
+                    0Alto!5e0!3m2!1spt-BR!2sbr!4v1638469546247!5m2!1spt-BR!2sbr" width="100%" 
+                    height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
         </section>
         <!-- ============== Sobre a Barbearia ============== -->
         <section class="beneficios">
             <h3 class="titulo-principal">Beneficios</h3>
 
-            <ul class="lista-beneficios">
-                <li>Atendimento aos Clientes</li>
-                <li>Espaço diferenciado</li>
-                <li>Localização</li>
-                <li>Profissionais qualificados</li>
-            </ul>
-            <img class="imagensBeneficios" src="./resources/beneficios.jpg" alt="">
-            
+            <div class="conteudo-beneficios">
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento aos Clientes</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais qualificados</li>
+                    <li class="itens">Pontualidade</li>
+                    <li class="itens">Limpeza</li>
+                </ul><img class="imagens-beneficios" src="./resources/beneficios.jpg" alt="">
+            </div>
+
             <!--  Video da Barbearia  -->
             <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
                 clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
+                </iframe>
             </div>
 
         </section>
     </main>
 
+    <!-- ============== Rodapé ============== -->
     <footer>
         <img src="../HTML5 e CSS3 parte-2/resources/logo-branco.png" alt="">
         <p class="copyright">&copy; Copyright Barbearia-Alura 2019</p>
