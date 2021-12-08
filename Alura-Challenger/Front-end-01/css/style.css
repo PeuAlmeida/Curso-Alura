@@ -35,7 +35,7 @@ nav input {
     height: 56px;
     border-radius: 8px;
     padding: 16px 14px;               
-    background: #576574;
+    background: #ffffff16;
     color: #FFFFFF;
     flex-grow: 3;
 }
@@ -55,4 +55,136 @@ nav .profile {
 
 nav .user p {
     margin: 0 0 0 8px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57.3px;
+}
+
+main p {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+main .menu ul {
+    margin-left: 10px;
+}
+
+main .menu li {
+    margin-top: 16px;
+    list-style: none;
+}
+
+
+
+main .menu a {
+    text-decoration: none;
+    color: white;
+}
+
+main .menu i {
+    padding: 16px 14px;
+    background: #5081FB29;
+    margin-right: 16px;
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#active {
+    background: #5081FB;
+    color: white;
+}
+
+.editor {
+    width: 752px;
+    height: 366px;
+    padding: 32px;
+    background: #6BD1FF;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+}
+
+.ball {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    top: -30px;
+    margin-right: 3px;
+}
+
+#bola-vermelha {
+    background: #FF5F56;
+}
+
+#bola-amarela {
+    background: #FFBD2E;
+}
+
+#bola-verde {
+    background: #27C93F;
+}
+
+.editor .code {
+    background: #141414;
+    width: 688px;
+    height: 302px;
+    padding: 52px 16px 16px 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#textarea {
+    resize: none;
+    width: 656px;
+    height: 202px;
+    color: white;
+    background: #141414;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    
+}
+
+.highlight {
+    width: 752px;
+    height: 56px;
+    border: none;
+    margin-top: 32px;
+    border-radius: 8px;
+    color: white;
+    background: #5081FB29;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.seu-projeto input {
+    margin: 16px 0;
+    width: 272px;
+    height: 56px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: white;
+    background: #ffffff16;
+    border: none;
+    font-size: 14px;
+}
+
+.seu-projeto textarea {
+    height: 80px;
+    width: 272px;
+    resize: none;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff16;
+    color: white;
+    margin-bottom: 40px;
 }

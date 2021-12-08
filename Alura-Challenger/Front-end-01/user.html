@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================ CSS Links ================ -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- ================ Fonts Google ================ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- ================ Font Awesome ================ -->
+    <script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+
+    <title>AluraDEV</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <li class="logo">
+            <a href="#"><img class="logo-img" src="./resources/logo.png" alt="Logo do Site"></a>
+        </li>
+        <li>
+            <input type="search" placeholder="Busque por algo">
+        </li>
+        <li>
+            <div class="user">
+                <a href=""><img class="profile"
+                        src="https://cdnb.artstation.com/p/assets/images/images/004/384/023/large/louhi-art-remus-lupincrop.jpg?1483225412"
+                        alt=""></a>
+                <p>Remus</p>
+            </div>
+        </li>
+    </nav>
+
+    <main>
+        <div class="menu">
+            <ul>
+                <p>Menu</p>
+                <li>
+                    <a href="">
+                        <i class="fa fa-code" id="active" aria-hidden="true"></i>
+                        Editor de código
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        Comunidade
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="editor-code">
+            <div class="editor">
+                <div class="code">
+                    <div class="ball" id="bola-vermelha"></div>
+                    <div class="ball" id="bola-amarela"></div>
+                    <div class="ball" id="bola-verde"></div>
+                    <textarea name="code" id="textarea" placeholder="Digite seu código..."></textarea>
+                </div>
+            </div>
+            <button class="highlight">Visualizar com o Highlight</button>
+        </div>
+        <div class="seu-projeto">
+            <p>Seu Projeto</p>
+            <form class="dados-projeto" action="">
+                <ul>
+                    <li><input type="text" class="nome-projeto" placeholder="Nome do seu projeto"> </li>
+                    <li><textarea name="" id="" placeholder="Descrição do seu projeto"></textarea></li>
+                </ul>
+                <p>Personalização</p>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
