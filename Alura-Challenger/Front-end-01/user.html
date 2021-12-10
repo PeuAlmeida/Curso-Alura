@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,26 +19,16 @@
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <li class="logo">
-            <a href="#"><img class="logo-img" src="./resources/logo.png" alt="Logo do Site"></a>
-        </li>
-        <li>
-            <input type="search" placeholder="Busque por algo">
-        </li>
-        <li>
-            <div class="user">
-                <a href=""><img class="profile"
-                        src="https://cdnb.artstation.com/p/assets/images/images/004/384/023/large/louhi-art-remus-lupincrop.jpg?1483225412"
-                        alt=""></a>
-                <p>Remus</p>
-            </div>
-        </li>
-    </nav>
+    <header class="cabecalho">
+        <a href="#" class="cabecalho__link--logo">
+            <img class="cabecalho__img--logo" src="./resources/Header/Logo.png" alt="Logo do Site"></a>
+        <input type="search" placeholder="Busque por algo" class="cabecalho__input">
+        <a href="" class="cabecalho__link--perfil">
+            <img class="cabecalho__perfil--img" src="./resources/Header/Photo.png" alt="Perfil">Harry</a>
+    </header>
 
     <main>
-        <div class="menu">
+        <nav class="menu">
             <ul>
                 <p>Menu</p>
                 <li>
@@ -54,7 +44,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <div class="editor-code">
             <div class="editor">
                 <div class="code">
@@ -67,13 +57,18 @@
             <button class="highlight">Visualizar com o Highlight</button>
         </div>
         <div class="seu-projeto">
-            <p>Seu Projeto</p>
             <form class="dados-projeto" action="">
-                <ul class="projeto">
-                    <li><input type="text" class="nome-projeto" placeholder="Nome do seu projeto"> </li>
-                    <li><textarea name="" id="" placeholder="Descrição do seu projeto"></textarea></li>
-                </ul>
-                <p>Personalização</p>
+                <p>Seu Projeto</p>
+                <input type="text" class="nome-projeto" placeholder="Nome do seu projeto"> 
+                <textarea class="descricao-projeto" name="" id="" placeholder="Descrição do seu projeto"></textarea>
+                <p class="personalizacao">Pesonalização</p>
+                <select class="dados-projeto__linguagem" name="" id="">
+                    <option value="javascript" selected>JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+                <input type="color" value="#6BD1FF" class="dados-cor">
+                <input type="submit" class="botao-salvar" value="Salvar projeto">
             </form>
         </div>
     </main>
