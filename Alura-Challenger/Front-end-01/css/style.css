@@ -96,8 +96,7 @@ main .menu i {
     width: 12px;
     height: 12px;
     border-radius: 100%;
-    top: -30px;
-    margin-right: 3px;
+    top: -25px;
 }
 
 #bola-vermelha {
@@ -116,7 +115,7 @@ main .menu i {
     background: #141414;
     width: 688px;
     height: 302px;
-    padding: 52px 16px 16px 16px;
+    padding: 42px 16px;
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -124,14 +123,12 @@ main .menu i {
 #textarea {
     resize: none;
     width: 656px;
-    height: 202px;
+    height: 233px;
     color: white;
     background: #141414;
     border: none;
     outline: none;
     font-size: 14px;
-    padding: 24px 16px;
-    
 }
 
 .highlight {
@@ -151,8 +148,13 @@ main .menu i {
     justify-content: flex-end;
 }
 
+.dados-projeto-titulo {
+    margin-bottom: 8px;
+}
+
 .dados-projeto {
     display: grid;
+    gap: 16px;
     
 }
 
@@ -181,8 +183,12 @@ main .menu i {
     width: 272px;
     height: 80px;
     box-sizing: border-box;
+    margin-bottom: 24px;
 }
 
+.personalizacao {
+    margin-bottom: 8px;
+}
 
 .dados-projeto__linguagem {
     width: 272px;
@@ -212,5 +218,4 @@ main .menu i {
     border:none;
     color: #051D3B;
     background: #5081FB;
-    margin-top: 16px;
 }

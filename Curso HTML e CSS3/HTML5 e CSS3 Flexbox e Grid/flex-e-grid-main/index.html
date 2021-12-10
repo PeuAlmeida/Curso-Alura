@@ -17,8 +17,10 @@
     <header class="cabecalho">
         <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
         <img class="cabecalho__logo" src="assets/img/logo.svg" alt="Logotipo da HZC">
+        <p class="cabecalho__perfil">Pedro Almeida</p>
         <button class="cabecalho__notificacao" aria-label="Notificação"><i></i></button>
     </header>
+
     <nav class="menu-lateral">
         <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
         <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Inicio</a>
@@ -28,10 +30,12 @@
         <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
     </nav>
+
     <main class="principal">
         <h2 class="titulo-pagina">Início</h2>
-        <article class="cartao cartao--destaque">
-            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartao" class="cartao__imagem">
+        <article class="cartao cartao--destaque destaque-video">
+            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartao" class="cartao__imagem--mobile">
+            <img src="assets/img/banner_1.png" alt="Banner do cartao" class="cartao__imagem--desktop">
             <div class="cartao__conteudo">
                 <p class="cartao__destaque">Video em destaque</p>
                 <h3 class="cartao__titulo">HZC - Título</h3>
@@ -41,7 +45,40 @@
                 <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
             </div>
         </article>
-        <section class="secao">
+
+        <article class="cartao cartao--recentes recentes-video">
+            <h3 class="cartao__titulo">Vídeos Recentes</h3>
+            <a href="#" class="cartao__link">Ver todos</a>
+            <ul class="cartao__lista">
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_2.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_3.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_4.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_5.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+            </ul>
+        </article>
+
+        <section class="secao secao-videos">
             <h3 class="titulo__secao">Vídeos mais vistos</h3>
             <article class="cartao">
                 <img src="assets/img/video_1.png" alt="Vídeo" class="cartao__imagem">
@@ -80,8 +117,52 @@
                 </div>
             </article>
         </section>
-        <article class="cartao cartao--destaque">
-            <img src="assets/img/banner-mobile_2.png" alt="Banner do cartao" class="cartao__imagem">
+
+        <article class="cartao cartao--recentes recentes-produto">
+            <h3 class="cartao__titulo">Vídeos Recents</h3>
+            <a href="#" class="cartao__link">Ver todos</a>
+            <ul class="cartao__lista">
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_1.png" alt="thumbnail" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_2.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_3.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_4.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_5.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_5.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+                <li class="cartao__item">
+                    <img src="assets/img/miniatura_3.png" alt="" class="cartao__item-thumbnail">
+                    <h4 class="cartao__item-titulo">HZC - Love Machine</h4>
+                    <p class="cartao__item-perfil">Pedro Almeida</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="cartao cartao--destaque destaque-produto">
+            <img src="assets/img/banner-mobile_2.png" alt="Banner do cartao" class="cartao__imagem--mobile">
+            <img src="assets/img/banner_2.png" alt="Banner do cartao" class="cartao__imagem--desktop">
             <div class="cartao__conteudo">
                 <p class="cartao__destaque">Video em destaque</p>
                 <h3 class="cartao__titulo">HZC - Título</h3>
@@ -91,7 +172,8 @@
                 <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
             </div>
         </article>
-        <section class="secao">
+
+        <section class="secao secao-produtos">
             <h3 class="titulo__secao">Vídeos mais vistos</h3>
             <article class="cartao">
                 <img src="assets/img/produto_1.png" alt="Vídeo" class="cartao__imagem">
