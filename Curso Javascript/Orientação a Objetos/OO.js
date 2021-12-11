@@ -1,6 +1,7 @@
-class Cliente {
-    nome;
-    cpf;
+class ContaCorrente {
+    agencia;
+    _saldo; // Padrão da comunidade para avisar que um atributo é privado
+    //#saldo = 0 > Private em discurssão 
 }
 
 class ContaCorrente {
@@ -22,7 +23,6 @@ class ContaCorrente {
         }
     } 
 }
-
 // const cliente1 = new Cliente();
 // const cliente2 = new Cliente();
 
