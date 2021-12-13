@@ -26,6 +26,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16); ;
 }
 
+.cabecalho__perfil {
+    display: none;
+}
+
 .cabecalho__menu i::before {
     content: "\e904";
     font-size: 24px;
@@ -34,10 +38,6 @@ body {
 .cabecalho__notificacao::before {
     content: "\e906";
     font-size: 24px;
-}
-
-.cabecalho__perfil {
-    display: none;
 }
 
 .cabecalho__logo {
@@ -174,7 +174,8 @@ body {
 .principal {
     padding: 24px 16px;
     display: grid;
-    gap: 16px;
+    gap: 24px;
+    margin-top: 32px;
 }
 
 .titulo-pagina {
@@ -193,11 +194,9 @@ body {
         grid-template-columns: auto 1fr auto;
         grid-template-areas: 
             "titulo-pagina titulo-pagina titulo-pagina"
-            "destaque-video destaque-video recentes-video"
-            "secao-videos secao-videos secao-videos"
-            "recentes-produto destaque-produto destaque-produto"
-            "secao-produtos secao-produtos secao-produtos";
-
+            "destaque-mapa destaque-mapa recente-mapa"
+            "secao-mapa secao-mapa secao-mapa";
+            
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
@@ -215,15 +214,11 @@ body {
     background-color: #2C343A;
 }
 
-.cartao--destaque {
-    margin-bottom: 16px;
-}
-
 .cartao__conteudo {
+    gap: 8px;
     padding: 16px;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 8px;
 }
 
 .cartao__imagem--desktop {
@@ -235,18 +230,18 @@ body {
 }
 
 .cartao__titulo {
+    grid-column: span 2;
     font-size: 1.2rem;
     font-weight: 700;
-    grid-column: span 2;
 }
 
 .cartao__perfil {
+    grid-column: span 2;
     color: #95999C;
     font-size: 0.9rem;
-    grid-column: span 2;
 }
 
-.cartao__info  {
+.cartao__info {
     display: flex;
     align-items: center;
     color: #95999C;
@@ -257,7 +252,7 @@ body {
     margin-right: 8px;
 }
 
-.cartao__info--visualizacao::before {
+.cartao__info--visualizacao::before{
     content: "\e90f";
     margin-right: 8px;
 }
@@ -280,9 +275,9 @@ body {
 
 }
 
-.cartao__botao--destaque {
-    width: 100%;
-    grid-column: span 2;
+.cartao__botao--mapa::before {
+    font-size: 24px;
+    content: "\e909";
 }
 
 .cartao__botao--destaque::before {
