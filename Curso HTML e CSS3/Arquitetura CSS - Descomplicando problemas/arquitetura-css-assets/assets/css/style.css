@@ -1,0 +1,41 @@
+/*============== HEADER ==============*/
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: #f9f9f9;
+    padding: 0 2rem 0 2rem;
+}
+
+/*============== LOGO ==============*/
+
+.logo__header {
+    object-fit: cover;
+}
+
+/*============== NAVEGAÇÃO ==============*/
+
+.menu__itens {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+    margin-right: 1.25rem;
+}
+
+.menu__item-link {
+    color: #808080;
+    text-decoration: none;
+    
+}
+
+.menu__item-ativo {
+    color: #333333;
+    font-weight: bold;
+}
+
+.menu__item-link:hover {
+    text-decoration: underline;
+}
