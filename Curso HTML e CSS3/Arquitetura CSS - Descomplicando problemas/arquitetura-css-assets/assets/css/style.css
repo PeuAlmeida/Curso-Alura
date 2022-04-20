@@ -39,3 +39,45 @@ header {
 .menu__item-link:hover {
     text-decoration: underline;
 }
+
+/*============== NAVEGAÇÃO ==============*/
+
+.banner {
+    position: relative;
+}
+
+.banner__img {
+    width: 100%;
+    height: calc(100vh - 72px);
+}
+
+.banner__title {
+    font-family: Pacifico, cursive;
+    color: #fdfdfd;
+    font-size: 5.0625rem;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.sobre {
+    margin-top: 0;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.sobre__title {
+    font-family: Pacifico, cursive;
+    font-size: 3.1875rem;
+    color: #8d0606;
+}
+
+.sobre__text {
+    font-size: 1.75rem;
+    color: #595959;
+    font-weight: 100;
+}
