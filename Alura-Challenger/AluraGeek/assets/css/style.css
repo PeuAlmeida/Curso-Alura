@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container {
+    padding: 2rem 9.5rem;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__cabecalho {
+    height: 3.125rem;
+    margin-right: 2rem;
+}
+
+.procurar__cabecalho {
+    border-radius: 1rem;
+    background-color: #f5f5f5;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 24.563rem;
+    height: 2.5rem;
+    border: 1px #f5f5f5;
+}
+
+.procurar__cabecalho::placeholder {
+    color: rgba(0, 0, 0, .2);
+}
+
+.button__cabecalho {
+    padding: 0.825rem;
+    width: 11.375rem;
+    background-color: #FFFF;
+    border: #2A7AE4 1px solid;
+    color: #2A7AE4;
+    border-bottom: 2px solid #2A7AE4;
+    cursor: pointer;
+}
+
+.button__cabecalho:hover {
+    background-color: #D4E4FA;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+
+.banner__content {
+    position: absolute;
+    top: 35%;
+}
+
+.banner__titulo {
+    color: white;
+    font-weight: bold;
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+}
+
+.banner__subtitulo {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.banner__button {
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.banner__button:hover {
+    background-color: #5595E9;
+}
+
+.produtos {
+    align-items: center;
+}
+
+.produtos__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.produtos__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.produtos__link, .produto__link {
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2A7AE4;
+    text-decoration: none;
+    align-items: center;
+    
+}
+
+.bx {
+    font-size: 1.5rem;
+    margin-left: 0.75rem;
+}
+
+.produtos__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.produto__nome,
+.produto__preco,
+.produto__link {
+    margin: .5rem 0;
+}
+
+.produto__nome {
+    font-size: 0.875rem;
+}
+
+.produto__preco {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #EAF2FD;
+    
+
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.footer__logo,
+.footer__contato,
+.footer__lista {
+    margin-top: 4rem;
+}
+.footer__logo {
+    width: 11rem;
+    height: 3.125rem;
+    object-fit: cover;
+    margin-top: 4.875rem;
+}
+
+.footer__item {
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer__item-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__contato {
+    margin-top: 4.875rem;
+}
+
+
+.footer__contato-title {
+    font-size: 1rem;
+    font-weight: bold;
+   
+}
+
+.footer__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.footer__form-name,
+.footer__form-textarea {
+    width: 35rem;
+    border: none;
+    box-shadow: 1px 1px 5px #EAF2FD;
+    
+}
+
+.footer__form-name {
+    margin-bottom: 1rem;
+    height: 3.5rem;
+    padding: 1.75rem 0 0.5rem 0.75rem;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
+.footer__label {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+.footer__form-textarea {
+    height: 5.125rem;
+    resize: none;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
+.footer__form-textarea::placeholder {
+    color: rgba(0, 0, 0, .5);
+    font-size: 1rem;
+}
+
+.footer__button {
+    background-color: #2A7AE4;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer__button:hover {
+    background-color: #5595E9;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+
+}
+
