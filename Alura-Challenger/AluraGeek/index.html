@@ -5,52 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="boxicons.min.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <css>
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        
     </css>
 
     <title>AluraGeek</title>
 </head>
 
 <body>
-    <header class="cabecalho container">
-        <div class="container__cabecalho">
-            <img src="./assets/img/Logo.png" alt="" class="logo__cabecalho">
-            <input type="text" class="procurar__cabecalho" placeholder="O que deseja encontrar ?">
+    <header class="cabecalho">
+        <div class="container__cabecalho container">
+            <div class="logo__cabecalho">
+                <img src="./assets/img/Logo.png" alt="" class="logo__cabecalho--img">
+            </div>
+            <div class="procurar__cabecalho">
+                <input type="text" class="procurar__cabecalho--input" placeholder="O que deseja encontrar ?"> 
+                <i class='bx bx-search procurar__cabecalho--search'></i>
+            </div>
+            <div class="button__cabecalho">
+                <button class="button__cabecalho--login">Login</button>
+            </div>
         </div>
-
-        <button class="button__cabecalho">Login</button>
     </header>
 
     <section class="banner">
         <img src="./assets/img/banner.png" alt="" class="banner__img">
-        <div class="container banner__content">
+        <div class="banner__content container">
             <h1 class="banner__titulo">Dezembro Promocional</h1>
             <h3 class="banner__subtitulo">Produtos Selecionados 33% de desconto</h3>
             <button class="banner__button">Ver Consoles</button>
         </div>
     </section>
 
-    <section class="produtos container">
+    <section class="produtos">
 
-        <div class="produtos__info">
+        <div class="produtos__info container">
 
             <h2 class="produto__titulo">Star Wars</h2>
-            <a href="" class="produtos__link">Ver Tudo 
+            <a href="" class="produtos__link">Ver Tudo
                 <i class='bx bx-right-arrow-alt'></i>
             </a>
         </div>
 
-        <div class="produtos__cards">
+        <div class="produtos__cards container">
             <div class="produto__card">
+
                 <img src="./assets/img/starwars_1.png" alt="" class="produto__img">
                 <p class="produto__nome">Produto XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
@@ -58,7 +66,7 @@
                 <img src="./assets/img/starwars_2.png" alt="" class="produto__img">
                 <p class="produto__nome">Produto XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
 
             </div>
 
@@ -67,7 +75,7 @@
                 <img src="./assets/img/starwars_3.png" alt="" class="produto__img">
                 <p class="produto__nome">Produto XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
 
             </div>
 
@@ -76,27 +84,27 @@
                 <img src="./assets/img/starwars_4.png" alt="" class="produto__img">
                 <p class="produto__nome">Produto XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
 
             </div>
 
-            <div class="produto__card">
-
-                <img src="./assets/img/starwars_5.png" alt="" class="produto__img">
+            <div class="produto__card produto__desktop">
+                <img src="./assets/img/starwars_5.png" alt="" class="produto__img ">
                 <p class="produto__nome">Produto XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
-            <div class="produto__card">
-                <img src="./assets/img/starwars_6.png" alt="" class="produto__img">
+
+            <div class="produto__card produto__desktop">
+                <img src="./assets/img/starwars_6.png" alt="" class="produto__img ">
                 <p class="produto__nome">Produto XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
         </div>
 
 
-        <div class="produtos__info">
+        <div class="produtos__info container">
             <h2 class="produto__titulo">Consoles</h2>
             <a href="" class="produtos__link"> Ver Tudo
                 <i class='bx bx-right-arrow-alt'></i>
@@ -104,52 +112,52 @@
         </div>
 
 
-        <div class="produtos__cards">
+        <div class="produtos__cards container">
             <div class="produto__card">
                 <img src="./assets/img/console_1.png" alt="" class="produto__img">
                 <p class="produto__nome">Controle XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
                 <img src="./assets/img/console_2.png" alt="" class="produto__img">
                 <p class="produto__nome">Controles e Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
                 <img src="./assets/img/console_3.png" alt="" class="produto__img">
                 <p class="produto__nome">Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
                 <img src="./assets/img/console_4.png" alt="" class="produto__img">
                 <p class="produto__nome">Controle XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
-            <div class="produto__card">
-                <img src="./assets/img/console_5.png" alt="" class="produto__img">
+            <div class="produto__card produto__desktop">
+                <img src="./assets/img/console_5.png" alt="" class="produto__img ">
                 <p class="produto__nome">Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
-            <div class="produto__card">
-                <img src="./assets/img/console_6.png" alt="" class="produto__img">
+            <div class="produto__card produto__desktop">
+                <img src="./assets/img/console_6.png" alt="" class="produto__img ">
                 <p class="produto__nome">Game Boy Color XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
         </div>
 
 
-        <div class="produtos__info">
+        <div class="produtos__info container">
 
             <h2 class="produto__titulo">Diversos</h2>
             <a href="" class="produtos__link">Ver Tudo
@@ -157,62 +165,62 @@
             </a>
         </div>
 
-        <div class="produtos__cards">
+        <div class="produtos__cards container">
             <div class="produto__card">
                 <img src="./assets/img/diversos_1.png" alt="" class="produto__img">
                 <p class="produto__nome">Camisa Atari</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
                 <img src="./assets/img/diversos_2.png" alt="" class="produto__img">
                 <p class="produto__nome">Camisa SNES</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
                 <img src="./assets/img/diversos_3.png" alt="" class="produto__img">
                 <p class="produto__nome">Controle e Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
             <div class="produto__card">
                 <img src="./assets/img/diversos_4.png" alt="" class="produto__img">
                 <p class="produto__nome">Controle e Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
-            <div class="produto__card">
-                <img src="./assets/img/diversos_5.png" alt="" class="produto__img">
+            <div class="produto__card produto__desktop">
+                <img src="./assets/img/diversos_5.png" alt="" class="produto__img ">
                 <p class="produto__nome">Controle e Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
 
-            <div class="produto__card">
-                <img src="./assets/img/diversos_6.png" alt="" class="produto__img">
+            <div class="produto__card produto__desktop">
+                <img src="./assets/img/diversos_6.png" alt="" class="produto__img ">
                 <p class="produto__nome">Controle e Console XYZ</p>
                 <p class="produto__preco">R$ 60,00</p>
-                <a href="" class="produto__link">Ver Produto</a>
+                <p href="" class="produto__link">Ver Produto</p>
             </div>
         </div>
     </section>
 
     <section class="footer">
-        <div class="footer__content container">
+        <div class="footer__content">
             <img src="./assets/img/Logo.png" alt="" class="footer__logo">
             <div class="footer__lista">
                 <ul class="footer__itens">
-                    <li class="footer__item"><a href="" class="footer__item-link">Quem Somos</a></li>
-                    <li class="footer__item"><a href="" class="footer__item-link">Politica e Privacidade</a></li>
-                    <li class="footer__item"><a href="" class="footer__item-link">Programa de Fidelidade</a></li>
-                    <li class="footer__item"><a href="" class="footer__item-link">Nossas Lojas</a></li>
-                    <li class="footer__item"><a href="" class="footer__item-link">Quero Ser Franqueado</a></li>
-                    <li class="footer__item"><a href="" class="footer__item-link">Anuncie Aqui</a></li>
+                    <li class="footer__item"><a href="" class="footer__item--link">Quem Somos</a></li>
+                    <li class="footer__item"><a href="" class="footer__item--link">Politica e Privacidade</a></li>
+                    <li class="footer__item"><a href="" class="footer__item--link">Programa de Fidelidade</a></li>
+                    <li class="footer__item"><a href="" class="footer__item--link">Nossas Lojas</a></li>
+                    <li class="footer__item"><a href="" class="footer__item--link">Quero Ser Franqueado</a></li>
+                    <li class="footer__item"><a href="" class="footer__item--link">Anuncie Aqui</a></li>
                 </ul>
             </div>
             <div class="footer__contato">
@@ -227,7 +235,7 @@
         </div>
     </section>
     <section class="copyright">
-        <span class="copyright__name">Desenvolvido por Pedro Almeida</span>
+        <span class="\">Desenvolvido por Pedro Almeida</span>
         <span class="copyright__ano">2021</span>
     </section>
 </body>

@@ -4,139 +4,139 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
-.container {
-    padding: 2rem 9.5rem;
-}
-
-.cabecalho {
+.container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.container__cabecalho {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 1rem;
 }
 
-.logo__cabecalho {
-    height: 3.125rem;
-    margin-right: 2rem;
+.logo__cabecalho--img {
+    width: 6.25rem;
+    height: 1.75rem;
 }
 
 .procurar__cabecalho {
-    border-radius: 1rem;
-    background-color: #f5f5f5;
-    padding: 0 1rem;
-    box-sizing: border-box;
-    width: 24.563rem;
-    height: 2.5rem;
-    border: 1px #f5f5f5;
+    position: relative;
+    order: 3;
 }
 
-.procurar__cabecalho::placeholder {
-    color: rgba(0, 0, 0, .2);
+.procurar__cabecalho--input {
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3rem;
+    border: none;
+
+    
+}
+
+.procurar__cabecalho--input::placeholder { 
+    color: white;
+}
+
+.procurar__cabecalho--search {
+    position: absolute;
+    left: 27%;
+    top: 27%;
+    font-size: 1.5rem;
 }
 
 .button__cabecalho {
-    padding: 0.825rem;
-    width: 11.375rem;
-    background-color: #FFFF;
-    border: #2A7AE4 1px solid;
+    order: 2;
+}
+
+.button__cabecalho--login {
+    padding: .75rem 2.969rem;
+    background: none;
     color: #2A7AE4;
-    border-bottom: 2px solid #2A7AE4;
-    cursor: pointer;
-}
+    border: 2px solid #2A7AE4;
+    font-weight: 600;
+    font-size: .875rem;
 
-.button__cabecalho:hover {
-    background-color: #D4E4FA;
-}
-
-.banner {
-    position: relative;
 }
 
 .banner__img {
     width: 100%;
-    height: 22rem;
+    height: 12rem;
     object-fit: cover;
-    background-size: cover;
-    
+}
+
+.banner{
+    position: relative;
 }
 
 .banner__content {
     position: absolute;
-    top: 35%;
+    top: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
 }
-
 .banner__titulo {
-    color: white;
+    font-size: 1.375rem;
     font-weight: bold;
-    font-size: 3.25rem;
-    margin-bottom: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
 }
 
 .banner__subtitulo {
     color: white;
-    font-size: 1.25rem;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-bottom: 0.5rem;
 }
 
 .banner__button {
+    width: 7.438rem;
+    height: 2.5rem;
     color: white;
-    padding: 1rem;
-    font-size: 1rem;
     background-color: #2A7AE4;
-    border: 1px solid #2A7AE4;
-    margin-top: 1rem;
-    cursor: pointer;
+    border: none;
 }
 
-.banner__button:hover {
-    background-color: #5595E9;
+
+.produto__titulo {
+    font-size: 1.375rem;
 }
 
-.produtos {
-    align-items: center;
-}
-
-.produtos__info {
+.produtos__link {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.produtos__titulo {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.produtos__link, .produto__link {
-    display: flex;
-    font-size: 1rem;
-    font-weight: bold;
     color: #2A7AE4;
     text-decoration: none;
     align-items: center;
-    
+    font-size: .875rem;
+    font-weight: bold;
 }
 
-.bx {
+.bx-right-arrow-alt /* FLECHA DO LINK "VER TUDO"*/ {
+
     font-size: 1.5rem;
-    margin-left: 0.75rem;
+    margin-left: 0.417rem;
 }
 
-.produtos__cards {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4rem;
+.produtos__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -1rem;
+}
+
+.produto__card {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.produto__img {
+    width: 11.3rem;
+    height: 13rem;
+    object-fit: cover;
 }
 
 .produto__nome,
 .produto__preco,
 .produto__link {
-    margin: .5rem 0;
+    margin-top: 0.5rem;
 }
 
 .produto__nome {
@@ -146,118 +146,180 @@ body {
 .produto__preco {
     font-size: 1rem;
     font-weight: bold;
+    margin-top: -0.5rem;
+}
+
+.produto__link{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: .875rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+    cursor: pointer;
+    
+}
+
+.produto__desktop{
+    display: none;
 }
 
 .footer {
     background-color: #EAF2FD;
-    
-
 }
 
 .footer__content {
     display: flex;
-    justify-content: space-between;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer__logo,
-.footer__contato,
-.footer__lista {
-    margin-top: 4rem;
-}
 .footer__logo {
-    width: 11rem;
-    height: 3.125rem;
-    object-fit: cover;
-    margin-top: 4.875rem;
+    margin-top: 1.651rem;
+} 
+
+.footer__itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__item {
     list-style: none;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.footer__item-link {
+.footer__item--link {
     text-decoration: none;
-    color: black;
-}
-
-.footer__contato {
-    margin-top: 4.875rem;
-}
-
-
-.footer__contato-title {
     font-size: 1rem;
+    color: #464646;
+    font-weight: 500;
+}
+.footer__contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contato-title{
     font-weight: bold;
-   
+    margin-bottom: 0.5rem;
 }
 
 .footer__form {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem 0;
-}
-
-.footer__form-name,
-.footer__form-textarea {
-    width: 35rem;
-    border: none;
-    box-shadow: 1px 1px 5px #EAF2FD;
-    
+    display: grid;
 }
 
 .footer__form-name {
-    margin-bottom: 1rem;
+    width: 24rem;
     height: 3.5rem;
-    padding: 1.75rem 0 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0.75rem 00.75rem;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
     box-sizing: border-box;
-    border-bottom: 2px solid rgba(0, 0, 0, .2);
 }
 
 .footer__label {
     position: absolute;
-    left: 2%;
-    top: 5%;
-    font-size: 0.75rem;
-    color: rgba(0, 0, 0, .5);
+    left: 0.75rem;
+    top: 0.5rem;
+    color: #A2A2A2;
+    font-size: .75rem;
 }
 
 .footer__form-textarea {
+    width: 24rem;
     height: 5.125rem;
     resize: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
     box-sizing: border-box;
-    padding: 0.75rem;
-    border-bottom: 2px solid rgba(0, 0, 0, .2);
-}
-
-.footer__form-textarea::placeholder {
-    color: rgba(0, 0, 0, .5);
-    font-size: 1rem;
 }
 
 .footer__button {
     background-color: #2A7AE4;
-    padding: 1rem;
-    box-sizing: border-box;
     color: white;
+    width: 9.438rem;
+    height: 2.5rem;
     border: none;
-    cursor: pointer;
+    margin-bottom: 1.75rem;
 }
 
-.footer__button:hover {
-    background-color: #5595E9;
-}
-
-.copyright {
+.copyright{
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: 1rem;
-
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
 }
 
+.copyright__name,
+.copyright__ano {
+    color: #464646;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 320px) {
+    
+    .logo__cabecalho--img {
+        width: 5rem;
+        height: 1.6rem;
+    }
+
+    .button__cabecalho--login {       
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .banner__content {
+        top: 35%;
+    }
+
+    .banner__button {
+        display: flex;
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.75rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__subtitulo {
+        font-size: .75rem;
+    }
+
+    .produto__img {
+        width: 7.2rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+
+    .footer__form-name,
+    .footer__form-textarea {
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .produto__img {
+        width: 10.3rem;
+        height: 11rem;
+        object-fit: cover;
+    }
+
+    .footer__form-name,
+    .footer__form-textarea {
+
+        width: 22rem;
+    }
+
+}
