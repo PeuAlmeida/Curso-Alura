@@ -275,6 +275,11 @@ body {
 
 @media screen and (max-width: 400px) {
 
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
+    }
+    
     .produto__img {
         width: 10.3rem;
         height: 11rem;
@@ -304,6 +309,11 @@ body {
     .logo__cabecalho--img {
         width: 5rem;
         height: 1.6rem;
+    }
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
     }
 
     .button__cabecalho--login {
@@ -350,6 +360,11 @@ body {
         padding: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
     }
 
     .logo__cabecalho--img {
@@ -428,5 +443,85 @@ body {
 
     .footer__lista {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+
+    .container {
+        display: flex;
+        padding: 1rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logo__cabecalho--img {
+        width: 11rem;
+        height: 3.125rem;
+    }
+
+    .procurar__cabecalho--input {
+        width: 24.563rem;
+        height: 2.5rem;
+        margin-right: 20rem;
+    }
+
+    .procurar__cabecalho--search {
+        left: 48%;
+    }
+
+    .banner__img {
+        height: 22rem;
+    }
+
+    .banner__titulo {
+        font-size: 3.25rem;
+    }
+
+    
+    .produtos__cards {
+        display: flex;
+    }
+
+    .produto__img {
+        height: 11rem;
+        width: 10.875rem;
+    }
+
+    .produto__desktop {
+        display: block;
+    }
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__info{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer__logo {
+        width: 11rem;
+        height: 3.125rem;
+        margin-right: 7rem;
+    }
+
+    .footer__form-name {
+        width: 35rem;
+        height: 3.5rem;
+    }
+
+    .footer__form-textarea {
+        width: 35rem;
+        height: 5.125rem;
     }
 }
