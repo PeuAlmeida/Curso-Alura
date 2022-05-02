@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .button {
@@ -32,7 +33,6 @@ body {
     border-radius: 3rem;
     border: none;
 
-
 }
 
 .procurar__cabecalho--input::placeholder {
@@ -60,115 +60,46 @@ body {
 
 }
 
-.banner__img {
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-}
-
-.banner {
-    position: relative;
-}
-
-.banner__content {
-    position: absolute;
-    top: 30%;
+.login {
+    display: flex;
     flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-}
-
-.banner__titulo {
-    font-size: 1.375rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 0.5rem;
-}
-
-.banner__subtitulo {
-    color: white;
-    font-weight: 600;
-    font-size: .875rem;
-    margin-bottom: 0.5rem;
-}
-
-.banner__button {
-    width: 7.438rem;
-    height: 2.5rem;
-    color: white;
-    background-color: #2A7AE4;
-    border: none;
-}
-
-
-.produto__titulo {
-    font-size: 1.375rem;
-}
-
-.produtos__link {
-    display: flex;
-    color: #2A7AE4;
-    text-decoration: none;
     align-items: center;
-    font-size: .875rem;
-    font-weight: bold;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding: 6.03rem 0rem;
 }
 
-.bx-right-arrow-alt
-
-/* FLECHA DO LINK "VER TUDO"*/
-    {
-
-    font-size: 1.5rem;
-    margin-left: 0.417rem;
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.produtos__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: -1rem;
-}
-
-.produto__card {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+.login__input--email,
+.login__input--senha{
     box-sizing: border-box;
+    width: 17.188rem;
+    height: 2.563rem;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: 2px solid #C8C8C8
 }
 
-.produto__img {
-    width: 11.3rem;
-    height: 13rem;
-    object-fit: cover;
-}
-
-.produto__nome,
-.produto__preco,
-.produto__link {
-    margin-top: 0.5rem;
-}
-
-.produto__nome {
-    font-size: 0.875rem;
-}
-
-.produto__preco {
+.login__input--email::placeholder,
+.login__input--senha::placeholder {
+    color: #A2A2A2;
     font-size: 1rem;
-    font-weight: bold;
-    margin-top: -0.5rem;
 }
 
-.produto__link {
-    text-decoration: none;
-    color: #2A7AE4;
-    font-size: .875rem;
-    font-weight: bold;
-    margin-top: -0.5rem;
-    cursor: pointer;
-
-}
-
-.produto__desktop {
-    display: none;
+.login__button {
+    margin-top: 1rem;
+    width: 6.813rem;
+    height: 2.5rem;
+    border: none;
+    color: #ffff;
+    background-color: #2A7AE4;
 }
 
 .footer {
@@ -279,27 +210,11 @@ body {
         display: flex;
         align-items: center;
     }
-    
-    .produto__img {
-        width: 10.3rem;
-        height: 11rem;
-        object-fit: cover;
-    }
 
     .footer__form-name,
     .footer__form-textarea {
 
         width: 22rem;
-    }
-
-}
-
-@media screen and (max-width: 380px) {
-
-    .produto__img {
-        width: 9.6rem;
-        height: 8rem;
-        object-fit: cover;
     }
 
 }
@@ -324,29 +239,6 @@ body {
         justify-content: center;
     }
 
-    .banner__content {
-        top: 35%;
-    }
-
-    .banner__button {
-        display: flex;
-        width: 7rem;
-        height: 2rem;
-        font-size: 0.75rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .banner__subtitulo {
-        font-size: .75rem;
-    }
-
-    .produto__img {
-        width: 7.2rem;
-        height: 8rem;
-        object-fit: cover;
-    }
-
     .footer__form-name,
     .footer__form-textarea {
         width: 16rem;
@@ -358,8 +250,6 @@ body {
     .container {
         display: flex;
         padding: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
     .container__cabecalho {
@@ -371,6 +261,7 @@ body {
         width: 6rem;
         height: 1.755rem;
         margin-top: 0.5rem;
+        margin-right: 1rem;    
     }
 
     .procurar__cabecalho {
@@ -382,6 +273,7 @@ body {
         height: 2.5rem;
         background-color: #F5F5F5;
         box-sizing: border-box;
+        margin-right: 9rem;
     }
 
     .procurar__cabecalho--input::placeholder {
@@ -389,7 +281,7 @@ body {
     }
 
     .procurar__cabecalho--search {
-        left: 85%;
+        left: 55%;
         top: 20%;
         color: #A2A2A2;
     }
@@ -399,41 +291,6 @@ body {
         height: 2.5rem;
         border: solid 1px #2A7AE4;
         font-size: 0.875rem;
-    }
-
-    .banner__img {
-        height: 22rem;
-    }
-
-    .banner__content {
-        top: 45%;
-    }
-
-    .banner__titulo {
-        font-size: 3.25rem;
-        margin-bottom: 1rem;
-    }
-
-    .banner__subtitulo {
-        font-size: 1.375rem;
-    }
-
-    .banner__button {
-        width: 7.438rem;
-        height: 2.5rem;
-
-    }
-
-    .produtos__cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .produto__img {
-        width: 10.25rem;
-        height: 10.875rem;
-        object-fit: cover;
-        box-sizing: border-box;
     }
 
     .footer__content {
@@ -448,12 +305,13 @@ body {
 
 @media screen and (min-width: 900px) {
 
+    body{
+        overflow: hidden;
+    }
 
     .container {
         display: flex;
-        padding: 1rem;
-        margin-left: 15rem;
-        margin-right: 15rem;
+        padding: 1rem 15.6rem;
     }
 
     .container__cabecalho {
@@ -477,26 +335,11 @@ body {
         left: 48%;
     }
 
-    .banner__img {
-        height: 22rem;
-    }
-
-    .banner__titulo {
-        font-size: 3.25rem;
-    }
-
-    
-    .produtos__cards {
-        display: flex;
-    }
-
-    .produto__img {
-        height: 11rem;
-        width: 10.875rem;
-    }
-
-    .produto__desktop {
-        display: block;
+    .login__input--email,
+    .login__input--senha,
+    .login__button {
+        width: 26.438rem;
+        height: 3.938;
     }
 
     .footer__content {

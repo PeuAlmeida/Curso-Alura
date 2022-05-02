@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo__cabecalho--img {
+    width: 6.25rem;
+    height: 1.75rem;
+}
+
+.procurar__cabecalho {
+    position: relative;
+    order: 3;
+}
+
+.procurar__cabecalho--input {
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3rem;
+    border: none;
+
+
+}
+
+.procurar__cabecalho--input::placeholder {
+    color: white;
+}
+
+.procurar__cabecalho--search {
+    position: absolute;
+    left: 27%;
+    top: 27%;
+    font-size: 1.5rem;
+}
+
+.button__cabecalho {
+    order: 2;
+}
+
+.button__cabecalho--login {
+    padding: .75rem 2.969rem;
+    background: none;
+    color: #2A7AE4;
+    border: 2px solid #2A7AE4;
+    font-weight: 600;
+    font-size: .875rem;
+
+}
+
+.banner__img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__content {
+    position: absolute;
+    top: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner__titulo {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.banner__subtitulo {
+    color: white;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner__button {
+    width: 7.438rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+}
+
+
+.produto__titulo {
+    font-size: 1.375rem;
+}
+
+.produtos__link {
+    display: flex;
+    color: #2A7AE4;
+    text-decoration: none;
+    align-items: center;
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.bx-right-arrow-alt
+
+/* FLECHA DO LINK "VER TUDO"*/
+    {
+
+    font-size: 1.5rem;
+    margin-left: 0.417rem;
+}
+
+.produtos__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -1rem;
+}
+
+.produto__card {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.produto__img {
+    width: 11.3rem;
+    height: 13rem;
+    object-fit: cover;
+}
+
+.produto__nome,
+.produto__preco,
+.produto__link {
+    margin-top: 0.5rem;
+}
+
+.produto__nome {
+    font-size: 0.875rem;
+}
+
+.produto__preco {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+}
+
+.produto__link {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: .875rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+    cursor: pointer;
+
+}
+
+.produto__desktop {
+    display: none;
+}
+
+.footer {
+    background-color: #EAF2FD;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    margin-top: 1.651rem;
+}
+
+.footer__itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__item {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer__item--link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 500;
+}
+
+.footer__contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contato-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footer__form {
+    position: relative;
+    display: grid;
+}
+
+.footer__form-name {
+    width: 24rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0.75rem 00.75rem;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    box-sizing: border-box;
+}
+
+.footer__label {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.5rem;
+    color: #A2A2A2;
+    font-size: .75rem;
+}
+
+.footer__form-textarea {
+    width: 24rem;
+    height: 5.125rem;
+    resize: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    box-sizing: border-box;
+}
+
+.footer__button {
+    background-color: #2A7AE4;
+    color: white;
+    width: 9.438rem;
+    height: 2.5rem;
+    border: none;
+    margin-bottom: 1.75rem;
+}
+
+.copyright {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright__name,
+.copyright__ano {
+    color: #464646;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
+    }
+    
+    .produto__img {
+        width: 10.3rem;
+        height: 11rem;
+        object-fit: cover;
+    }
+
+    .footer__form-name,
+    .footer__form-textarea {
+
+        width: 22rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .produto__img {
+        width: 9.6rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .logo__cabecalho--img {
+        width: 5rem;
+        height: 1.6rem;
+    }
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .button__cabecalho--login {
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .banner__content {
+        top: 35%;
+    }
+
+    .banner__button {
+        display: flex;
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.75rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__subtitulo {
+        font-size: .75rem;
+    }
+
+    .produto__img {
+        width: 7.2rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+
+    .footer__form-name,
+    .footer__form-textarea {
+        width: 16rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    .container {
+        display: flex;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__cabecalho--img {
+        width: 6rem;
+        height: 1.755rem;
+        margin-top: 0.5rem;
+    }
+
+    .procurar__cabecalho {
+        order: 2;
+    }
+
+    .procurar__cabecalho--input {
+        width: 17rem;
+        height: 2.5rem;
+        background-color: #F5F5F5;
+        box-sizing: border-box;
+    }
+
+    .procurar__cabecalho--input::placeholder {
+        color: #A2A2A2;
+    }
+
+    .procurar__cabecalho--search {
+        left: 85%;
+        top: 20%;
+        color: #A2A2A2;
+    }
+
+    .button__cabecalho--login {
+        width: 10.375rem;
+        height: 2.5rem;
+        border: solid 1px #2A7AE4;
+        font-size: 0.875rem;
+    }
+
+    .banner__img {
+        height: 22rem;
+    }
+
+    .banner__content {
+        top: 45%;
+    }
+
+    .banner__titulo {
+        font-size: 3.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner__subtitulo {
+        font-size: 1.375rem;
+    }
+
+    .banner__button {
+        width: 7.438rem;
+        height: 2.5rem;
+
+    }
+
+    .produtos__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .produto__img {
+        width: 10.25rem;
+        height: 10.875rem;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__lista {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+
+    .container {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .container__cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logo__cabecalho--img {
+        width: 11rem;
+        height: 3.125rem;
+    }
+
+    .procurar__cabecalho--input {
+        width: 24.563rem;
+        height: 2.5rem;
+        margin-right: 20rem;
+    }
+
+    .procurar__cabecalho--search {
+        left: 48%;
+    }
+
+    .banner__img {
+        height: 22rem;
+    }
+
+    .banner__titulo {
+        font-size: 3.25rem;
+    }
+
+    
+    .produtos__cards {
+        display: flex;
+    }
+
+    .produto__img {
+        height: 11rem;
+        width: 10.875rem;
+    }
+
+    .produto__desktop {
+        display: block;
+    }
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__info{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer__logo {
+        width: 11rem;
+        height: 3.125rem;
+        margin-right: 7rem;
+    }
+
+    .footer__form-name {
+        width: 35rem;
+        height: 3.5rem;
+    }
+
+    .footer__form-textarea {
+        width: 35rem;
+        height: 5.125rem;
+    }
+}
