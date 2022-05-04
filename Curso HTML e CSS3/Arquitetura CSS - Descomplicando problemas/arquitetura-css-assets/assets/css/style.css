@@ -1,5 +1,4 @@
 /*============== HEADER ==============*/
-
 header {
     align-items: center;
     display: flex;
@@ -28,7 +27,7 @@ header {
 .menu__item-link {
     color: #808080;
     text-decoration: none;
-    
+
 }
 
 .menu__item-ativo {
@@ -40,21 +39,20 @@ header {
     text-decoration: underline;
 }
 
-/*============== NAVEGAÇÃO ==============*/
+/*============== Banner ==============*/
 
 .banner {
     position: relative;
 }
 
 .banner__img {
+    background: url(../img/banner.jpg) no-repeat center / cover;
     width: 100%;
-    height: calc(100vh - 72px);
 }
 
 .banner__title {
     font-family: Pacifico, cursive;
     color: #fdfdfd;
-    font-size: 5.0625rem;
     position: absolute;
     left: 50%;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
@@ -64,24 +62,23 @@ header {
     width: 100%;
 }
 
+/*============== Sobre ==============*/
 .sobre {
     margin-top: 0;
-    padding: 2.5rem;
     text-align: center;
 }
 
 .sobre__title {
     font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
     color: #8d0606;
 }
 
 .sobre__text {
-    font-size: 1.75rem;
     color: #595959;
     font-weight: 100;
 }
 
+/*============== RECEITAS ==============*/
 .receitas {
     background-color: #e5e5e5;
     display: flex;
@@ -94,8 +91,6 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    margin-right: 5rem;
-    width: calc(25% - 5rem);
 }
 
 .receita__imagem {
@@ -103,7 +98,7 @@ header {
     object-fit: cover;
 }
 
-.receita__conteudo{
+.receita__conteudo {
     padding: 1rem;
 }
 
@@ -124,10 +119,191 @@ header {
     color: #fdfdfd;
     padding: 1rem;
     transition: all .3s;
-    
+
 }
 
 .receita__botao:hover {
     background-color: #620404;
     cursor: pointer;
+}
+
+/*============== Quem Somos ==============*/
+
+.quem-somos {
+    text-align: center;
+    padding: 5rem;
+}
+
+.quem-somos__titulo {
+    color: #8d0606;
+    font-size: 3.1875rem;
+    font-family: Pacifico, cursive;
+    margin-bottom: 1rem;
+}
+
+.quem-somos__descricao {
+    color: #595959;
+    font-weight: 100;
+    font-size: 1.75rem;
+}
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+
+}
+
+.pessoa__imagem {
+    border-radius: 100%;
+    background: no-repeat center / cover;
+    height: 200px;
+    margin: 0 auto;
+    width: 200px;
+
+}
+
+.pessoa__imagem--roberta {
+    background-image: url('../img/pessoas/roberta.jpg');
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('../img/pessoas/marcela.jpg');
+}
+
+.pessoa__imagem--andreia {
+    background-image: url('../img/pessoas/andreia.jpg');
+}
+
+.pessoa__nome {
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.pessoa__funcao {
+    text-transform: lowercase;
+    color: #595959;
+    font-size: 1.25rem;
+}
+
+/*============== Footer ==============*/
+.rodape {
+    background-color: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}
+
+@media screen and (min-width: 0) {
+    .cabecalho {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .logo__header {
+        display: none;
+    }
+
+    .banner__title {
+        font-size: 3rem;
+    }
+
+    .banner__img {
+        height: calc(100vh - 51px);
+    }
+
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre__title {
+        font-size: 2rem;
+    }
+
+    .sobre__text {
+        font-size: 1.3rem;
+    }
+
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+    
+    .receita {
+        width: 100%;
+        margin-right: 1rem;
+    }
+
+    .pessoas {
+        flex-direction: column;
+    }
+
+    .pessoa {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+
+    .logo__header {
+        display: block;
+    }
+
+    .banner__title {
+        font-size: 5.0625rem;
+    }
+
+    .banner__img {
+        height: calc(100vh - 72px);
+    }
+
+    .sobre {
+        padding: 2.5rem;
+    }
+
+    .sobre__title {
+        font-size: 3.1875rem;
+    }
+
+    .sobre__text {
+        font-size: 1.75rem;
+    }
+    
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+    .pessoas {
+        flex-direction: row;
+    }
+    .pessoa {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .receitas {
+        padding: 5rem 0 0 5rem;
+    }
+
+    .receita {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
 }
