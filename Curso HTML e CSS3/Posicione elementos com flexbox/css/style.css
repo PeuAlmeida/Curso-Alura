@@ -42,7 +42,6 @@ body {
 	text-decoration: none;
 	transition: .5s;
 	display: block;
-
 	border-bottom: 1px solid #9799A6;
 }
 
@@ -112,30 +111,21 @@ body {
 
 .videoSobre .container {
 	display: flex;
-	justify-content: space-between;
-	height: 400px;
-}
-
-.videoSobre-video {
-	width: 50%;
-	height: 100%;
 }
 
 .videoSobre-sobre {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	text-align: center;
+	flex-grow: 2;
 }
 
-.videoSobre-sobre-title,
-.videoSobre-sobre-list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.videoSobre-video {
+	flex-grow: 1;
 }
 
 .videoSobre-sobre-list {
-	height: 90%;
+	flex-grow: 1;
 }
 
 .rodapePrincipal {
@@ -191,12 +181,14 @@ body {
 
 .rodapePrincipal-patrocinadores .container {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .rodapePrincipal-patrocinadores-list {
 	display: flex;
 	width: 75%;
 	justify-content: space-around;
+	
 }
 
 .rodapePrincipal-contatoForm {
@@ -243,6 +235,7 @@ body {
 
 .videoSobre-video {
 	max-width: 100%;
+	flex-shrink: 2;
 }
 
 .videoSobre .container {
@@ -278,7 +271,73 @@ body {
 	display: flex;
 }
 
-@media(min-width: 769px) {
+@media screen and (max-width: 768px) {
+	
+	.cabecalhoPrincipal .container {
+		display: flex;
+		flex-direction: column;
+		align-items: initial;
+		text-align: center;
+	}
+	
+	.cabecalhoPrincipal-nav{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.conteudoPrincipal-cursos {
+		flex-direction: column;
+	}
+	
+	.conteudoPrincipal-cursos-link {
+		width: 100%;
+	}
+
+	.rodapePrincipal-navMap-list {
+		height: auto;
+	}
+
+	.videoSobre .container {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}	
+
+	.videoSobre-video {
+		width: 100%;
+		flex-shrink: 2;
+
+	}
+
+	.videoSobre-sobre{
+		display: flex;
+		width: 100%;
+	}
+
+	.rodapePrincipal-patrocinadores .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rodapePrincipal-patrocinadores-list {
+		margin: 0;
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm {
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm {
+		align-items: center;
+	}
+
+	.cabecalhoPrincipal-nav-link-app {
+		order: -1;
+	}
+}
+
+@media(max-width: 769px) {
 
 	.container {
 		width: 85%;	
@@ -323,7 +382,6 @@ body {
 	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
 		margin-left: 0;
 	}
-
 }
 
 @media(min-width: 1000px) {
