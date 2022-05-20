@@ -47,8 +47,40 @@
     color: var(--fonte-link);
     text-decoration: underline;
     display: block;
+    margin-bottom: 1rem;
 }
 
 .institucional__video {
     width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+    .institucional__contato-email {
+        display: inline-block;
+    }
+
+    .institucional__video {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .institucional__conteudo {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        text-align: left;
+    }
+
+    .institucional__video {
+        align-self: flex-end;
+        width: 375px;
+    }
+
+    .institucional__contato-email {
+        display: block;
+    }
 }
