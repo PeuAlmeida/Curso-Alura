@@ -1,346 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@100;400;500;700&display=swap');
+/* ================ Fonts Google ================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto+Mono&display=swap');
+/* ================ Variaveis ================ */
+
+:root {
+     --azul-claro: #96b9fd;
+     --azul: #7BA4FC;
+     --azul-escuro: #5081FB;
+     --azul-marinho: #051D3B;
+     
+     --input-background: #FFFFFF29;
+
+     --font-titulo-grande: 2rem;
+     --font-titulo-pequeno: 1.3rem;
+
+     --font-body-grande: 1.5rem;
+     --font-body-pequeno: 1rem;
+
+     --font-sidebar-grande: 1.2rem;
+     --font-sidebar-pequena: 0.75rem;
+
+     --sombra: 0px 16px 10px rgba(0,0,0,0.24);
+}
+
+
+/* ================ Padrão ================ */
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
 body {
-    background: #051D3B;
-    color: white;
     font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
+    background-color: var(--azul-marinho);
+    color: white;
 }
 
-.cabecalho {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+.container {
     padding: 2rem;
 }
 
-.cabecalho__input {
-    width: 47rem;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-    background-color: #FFFFFF29;
-    color: white;
+.input {
+    background-color: var(--input-background);
     border: none;
-    padding: 1rem 0.875rem;
-}
-
-.cabecalho__link--perfil {
-    display: flex;
-    text-decoration: none;
-    color: white;
-    justify-content: flex-end;
-    align-items: center;  
-}
-
-.cabecalho__perfil--img {
-    margin-right: 0.5rem;
-}
-
-.user {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-    padding: 0.75rem;
-}
-
-.user ul p {
-    font-size: 0.75rem;
-    letter-spacing: 0.313rem;
-    text-transform: uppercase;
-    gap: 0.5rem;
-}
-
-.user  .menu ul {
-    margin-left: 0.625rem;
-}
-
-.user  .menu li {
-    margin-top: 1rem;
-    list-style: none;
-}
-
-.user  .menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.user  .menu i {
-    padding: 1rem 0.875rem;
-    background: #5081FB29;
-    margin-right: 1rem;
-    border-radius: 1rem;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-#active {
-    background: #5081FB;
-    color: white;
-}
-
-.editor {
-    width: 47rem;
-    height: 22.875rem;
-    padding: 2rem;
-    background: #6BD1FF;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    
-}
-
-.code {
-    background: #141414;
-    width: 43rem;
-    height: 18.875rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-}
-
-#textarea {
-    resize: none;
-    width: 41rem;
-    height: 14.563rem;
-    color: white;
-    background: #141414;
-    border: none;
-    outline: none;
-    font-size: 0.875rem;
-    margin-top: 1.5rem;
-}
-
-.highlight {
-    width: 47rem;
-    height: 3.5rem;
-    border: none;
-    margin-top: 2rem;
-    border-radius: 0.5rem;
-    color: white;
-    background: #5081FB29;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.seu-projeto {
-    display: grid;
-    justify-content: flex-end;
-}
-
-.dados-projeto-titulo {
-    margin-bottom: 0.5rem;
-}
-
-.dados-projeto {
-    display: grid;
-    gap: 1rem;
-    
-}
-
-.dados-projeto .nome-projeto, textarea {
-    width: 17rem;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-    border: none;
-    box-sizing: border-box;
-}
-
-.nome-projeto {
-    background-color: #FFFFFF29 ;
-    color: white;
-    padding: 1rem 0.875rem;
-}
-
-.dados-descricao-projeto {
-    background-color: #FFFFFF29;
-    padding: 1rem 0.875rem;
-    border: none;
-    resize: none;
+    font-size: .875rem;
     color: white;
     border-radius: .5rem;
-    width: 17rem;
-    height: 5rem;
-    box-sizing: border-box;
-    margin-bottom: 1.5rem;
-}
-
-.personalizacao {
-    margin-bottom: .5rem;
-}
-
-.dados-projeto__linguagem {
-    width: 17rem;
-    height: 3.5rem;
-    border-radius: .5rem;
-    border: none;
     padding: 1rem .875rem;
-    background: rgb(45, 65, 91);
-    color: rgba(255, 255, 255, 0.64);
-    font-weight: 400;
-
+    width: 272px;
+    box-sizing: border-box;
 }
 
-.dados-cor {
-    padding: .5rem;
-    border-radius: .25rem;
-    background: #051D3B;
-    height: 3.5rem;
-    width: 17rem;
+.input:hover {
+    background-color: rgba(255, 255, 255, 0.24);
 }
 
-.botao-salvar {
-
-    width: 17rem;
-    height: 3.5rem;
-    border-radius: .5rem;
-    border:none;
-    color: #051D3B;
-    background: #5081FB;
+.input::placeholder {
+    color: rgba(255, 255, 255, .64);
 }
 
-/* ============= ABA COMUNIDADE ============= */
-.comunidade {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    padding: 1rem;
-}
-
-.comunidade .menu ul p {
-    font-size: .75rem;
-    letter-spacing: .313rem;
+.titulo__sidebar {
+    font-size: var(--font-sidebar-pequena);
+    letter-spacing: .4rem;
     text-transform: uppercase;
-    gap: .5rem;
 }
 
-.comunidade  .menu ul {
-    margin-left: .625rem;
+.button:hover {
+    background-color: #7BA4FC;
 }
 
-.comunidade  .menu li {
-    margin-top: 1rem;
-    list-style: none;
+.button:focus {
+    background-color: #96B9FD;
 }
 
-.comunidade  .menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.comunidade  .menu i {
-    padding: 1rem .875rem;
-    background: #5081FB29;
-    margin-right: 1rem;
-    border-radius: 1rem;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.projetos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    
-    grid-template-areas:
-    "card-background card-background card-background" 
-    "titulo-projeto titulo-projeto titulo-projeto"
-    "descricao-projeto descricao-projeto descricao-projeto"
-    "comentarios-projeto curtidas-projeto perfil-user";
-    width: 32.5rem;
-    height: 29rem;
-    box-sizing: border-box;
-    background: #00000029;
-}
-
-/*  ============= GRID AREAS ============= */
-.card-background {
-    grid-area: card-background;
-}
-
-.titulo-projeto {
-    grid-area: titulo-projeto;
-}
-
-.descricao-projeto {
-    grid-area: descricao-projeto;
-}
-
-.comentario-projeto {
-    grid-area: comentarios-projeto;
-}
-
-.perfil-user {
-    grid-area: perfil-user;
-}
-
-/*  ======================================= */
-
-.card__background{
-    padding: 1.5rem;
-    height: 18rem;
-    background: #9AFF6B;
-    box-sizing: border-box;
-    gap: 1.5rem;
-    border-radius: .5rem;
-}
-
-.card__background--mac {
-    background: #000000;
-    padding: .75rem;
-    width: 29.5rem;
-    height: 15rem;
-    box-sizing: border-box;
-    border-radius: .5rem;
-}
-
-.codigo__area {
-    display: flex;
-    height: 12.188rem;
-    width: 27.5rem;
-    resize: none;
-    margin-top: 1rem;
-    background: #000000;
-    color: white;
-    outline: none;
-}
-
-.titulo__projeto {
-    font-weight: 700;
-    font-size: 1.313rem;
-    margin-left: 1.5rem;
-}
-
-.descricao__projeto {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-left: 1.5rem;
-}
-
-.projetos .card a {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    margin-left: 1.625rem;
-    align-items: center;
-    margin-bottom: 2.188rem;
-}
-
-.projetos .card i {
-    margin-right: .5rem;
-}
-
-.perfil-user {
-    justify-self: flex-end;
-    margin-right: 2rem;
-}
-
-.img__perfil {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: .5rem;
+.button:active {
+    border: 4px solid #5081FBB8;
+    background-color: #7BA4FC;
+    padding: calc(.75rem);
 }

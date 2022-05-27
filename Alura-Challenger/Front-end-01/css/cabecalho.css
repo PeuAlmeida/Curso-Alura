@@ -1,0 +1,46 @@
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.cabecalho__pesquisa {
+    width: 752px;
+    height: 56px;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.cabecalho__usuario {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cabecalho__usuario--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 106px;
+    height: 56px;
+    border-radius: .5rem;
+}
+
+.cabecalho__usuario--link:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+
+
+.cabecalho__usuario--foto {
+    margin-right: .5rem;
+}
+
+.cabecalho__usuario--nome {
+    text-decoration: none;
+    font-size: var(--font-body-pequeno)
+}
+
+
