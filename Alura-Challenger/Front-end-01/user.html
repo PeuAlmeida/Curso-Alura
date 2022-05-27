@@ -9,7 +9,7 @@
     <!-- ================ CSS Links ================ -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="./css/conteudo__menu.css">
     <link rel="stylesheet" href="./css/conteudo__principal.css">
@@ -24,7 +24,9 @@
 
 <body>
     <header class="cabecalho container">
-        <img src="./resources/Header/Logo.png" alt="" class="cabecalho__logo">
+        <a href="#" class="cabecalho__logo">
+            <img src="./resources/Header/Logo.png" alt="" class="cabecalho__logo--img">
+        </a>
         <input type="text" class="cabecalho__pesquisa input" placeholder="Busque por algo">
         <div class="cabecalho__usuario">
             <a href="#" class="cabecalho__usuario--link">
@@ -37,13 +39,13 @@
         <nav class="conteudo__menu">
             <h3 class="conteudo__menu--titulo titulo__sidebar">MENU</h3>
             <div class="conteudo__menu--item">
-                <a href="" class="conteudo__menu--icone conteudo__menu--icone-active button"><i
+                <a href="#" class="conteudo__menu--icone conteudo__menu--icone-active button"><i
                         class='bx bx-code-alt'></i></a>
-                <a href="" class="conteudo__menu--descricao conteudo__menu--descricao-active">Editor de código</a>
+                <a href="#" class="conteudo__menu--descricao conteudo__menu--descricao-active">Editor de código</a>
             </div>
             <div class="conteudo__menu--item">
-                <a href="" class="conteudo__menu--icone button"><i class='bx bx-group'></i></a>
-                <a href="" class="conteudo__menu--descricao">Comunidade</a>
+                <a href="./comunidade.html" class="conteudo__menu--icone button"><i class='bx bx-group'></i></a>
+                <a href="./comunidade.html" class="conteudo__menu--descricao">Comunidade</a>
             </div>
         </nav>
         <section class="conteudo__principal">

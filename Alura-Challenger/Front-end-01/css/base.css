@@ -68,6 +68,7 @@ body {
 
 .button:hover {
     background-color: #7BA4FC;
+    color: white;
 }
 
 .button:focus {

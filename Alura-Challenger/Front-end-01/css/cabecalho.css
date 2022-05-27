@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.cabecalho__logo {
+    width: 145px;
+    height: 34.05px;
+}
+
 .cabecalho__pesquisa {
     width: 752px;
     height: 56px;
