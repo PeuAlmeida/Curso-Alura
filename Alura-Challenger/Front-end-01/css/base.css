@@ -29,16 +29,13 @@
 a {
     text-decoration: none;
     color: white;
+    overflow: hidden;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--azul-marinho);
     color: white;
-}
-
-.container {
-    padding: 2rem;
 }
 
 .input {

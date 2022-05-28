@@ -1,12 +1,5 @@
 .cabecalho {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-}
-
-.cabecalho__logo {
-    width: 145px;
-    height: 34.05px;
 }
 
 .cabecalho__pesquisa {

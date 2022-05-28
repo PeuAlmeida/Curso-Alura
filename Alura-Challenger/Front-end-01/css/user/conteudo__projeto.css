@@ -1,17 +1,11 @@
-.projeto__descricao {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
 .projeto__conteudo--nome {
-    display: block;
     height: 56px;
     margin: 1rem 0;
 }
 
 .projeto__conteudo--descricao {
     padding: 1rem .875rem;
+    height: 5rem;
     color: white;
     resize: none;
 }
@@ -21,14 +15,11 @@
 }
 
 .projeto__personalizacao--linguagem {
-    display: block;
-    height: 56px;
     margin: 1rem 0;
     color: rgba(255, 255, 255, .64);
 }
 
 .projeto__personalizacao--input-color {
-    display: flex;
     align-items: center;
     width: 272px;
     height: 56px;
@@ -36,7 +27,6 @@
     padding: .5rem;
     box-sizing: border-box; 
     border-radius: .5rem; 
-    margin-bottom: 2rem;
 } 
 
 
@@ -49,7 +39,6 @@
 }
 
 .projeto__conteudo--botao {
-    width: 272px;
     height: 56px;
     border-radius: .5rem;
     border: none;

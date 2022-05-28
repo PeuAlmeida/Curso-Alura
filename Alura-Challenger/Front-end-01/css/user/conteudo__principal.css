@@ -4,8 +4,6 @@
 }
 
 .conteudo__principal--background{
-    width: 752px;
-    height: 366px;
     background-color: #6BD1FF;
     border-radius: 1rem;
     padding: 2rem;
@@ -15,8 +13,6 @@
 
 .conteudo__principal--tela {
     background-color: black;
-    width: 688px;
-    height: 302px;
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 1rem;
@@ -28,8 +24,6 @@
 }
 
 .conteudo__principal--codigo {
-    width: 656px;
-    height: 234px;
     box-sizing: border-box;
     resize: none;
     background-color: black;
@@ -42,7 +36,7 @@
 
 .conteudo__principal--botao {
     height: 56px;
-    background-color: rgba(80, 129, 251, 0.16);
+    background-color: #5081FB14;
     border: none;
     color: white;
     border-radius: .5rem;
