@@ -77,3 +77,8 @@ body {
     background-color: #7BA4FC;
     padding: calc(.75rem);
 }
+
+textarea {
+    font-family: "Roboto Mono", sans-serif;
+    color: white;
+}

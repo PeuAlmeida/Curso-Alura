@@ -3,6 +3,7 @@
     *{
         overflow-x: hidden;
     }
+
     .container {
         padding: 1rem;
         padding-right: calc(1rem - .5rem);
@@ -53,7 +54,7 @@
         flex-direction: column;
     }
 
-    .conteudo__menu {
+    .conteudo__menu--navegacao {
         display: none;
     }
 
@@ -85,7 +86,7 @@
 
     .projeto__descricao {
         width: 100%;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .projeto__conteudo {
@@ -122,8 +123,6 @@
     }
 
 }
-
-
 
 @media screen and (min-width: 768px) {
 
@@ -187,19 +186,24 @@
 
 @media screen and (min-width: 992px) {
 
+    *{
+        overflow-x: visible;
+    }
+    
     .container {
         padding: 2rem;
     }
 
     .cabecalho {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 
-    .conteudo__menu {
+    .conteudo__menu--navegacao {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        overflow: hidden;
     }
 
     .cabecalho__usuario {
@@ -213,14 +217,7 @@
 
     .conteudo {
         display: grid;
-        grid-template-columns: 23rem auto 20rem;
-    }
-
-    .conteudo__menu {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1rem;
-        overflow: hidden;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 
     .conteudo__menu--titulo {
@@ -235,9 +232,8 @@
     }
 
     .conteudo__principal--background {
-        max-width: 47rem;
+        max-width: 100%;
         height: 22.875rem;
-        
     }
 
     .conteudo__principal--tela {
@@ -252,6 +248,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        box-sizing: border-box;
     }
 
     .projeto__conteudo,
@@ -274,7 +271,8 @@
     .projeto__personalizacao--linguagem,
     .projeto__personalizacao--input-color,
     .projeto__conteudo--botao {
-        width: 17rem;
+        max-width: 17rem;
+        box-sizing: border-box;
     }
 
     .projeto__conteudo--botao {
@@ -283,7 +281,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    
+
     .projeto__personalizacao--titulo,
     .projeto__conteudo--titulo,
     .cabecalho__usuario--nome {
@@ -304,4 +302,5 @@
     .projeto__conteudo--botao {
         margin-top: 2.5rem;
     }
+
 }

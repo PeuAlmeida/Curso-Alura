@@ -8,140 +8,238 @@
 
     <!-- ================ CSS Links ================ -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/conteudo__menu.css">
+    <link rel="stylesheet" href="./css/comunidade/comunidade.css">
+    <link rel="stylesheet" href="./css/comunidade/responsivo__comunidade.css">
 
-    <!-- ================ Fonts Google ================ -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- ================ Font Awesome ================ -->
-    <script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+    <!-- ================ BoxIcons ================ -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 
     <title>AluraDEV | COMUNIDADE</title>
 </head>
 
 <body>
-    
-    <header class="cabecalho">
-        <a href="#" class="cabecalho__link--logo">
-            <img class="cabecalho__img--logo" src="./resources/Header/Logo.png" alt="Logo do Site"></a>
-        <input type="search" placeholder="Busque por algo" class="cabecalho__input">
-        <a href="" class="cabecalho__link--perfil">
-            <img class="cabecalho__perfil--img" src="./resources/Header/Photo.png" alt="Perfil">Harry</a>
-    </header>
 
-    <main class="comunidade">
-        <nav class="menu">
-            <ul>
-                <p>Menu</p>
-                <li>
-                    <a href="user.html">
-                        <i class="fa fa-code"  aria-hidden="true"></i>
-                        Editor de código
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-users" id="active" aria-hidden="true"></i>
-                        Comunidade
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <body>
+        <header class="cabecalho container">
+            <a href="#" class="cabecalho__logo">
+                <img src="./resources/Header/Logo.png" alt="" class="cabecalho__logo--img">
+            </a>
+            <!-- ================ Cabecalho Mobile  ================ -->
+            <div class="cabecalho__menu--mobile">
+                <a href="" class="cabecalho__pesquisa--mobile"><i class='bx bx-search-alt-2'></i></a>
+                <a href="" class="cabecalho__menu--mobile"><i class='bx bx-menu cabecalho__menu--mobile'></i></a>
+            </div>
 
-        <section class="projetos">
-            <article class="card">
-                <div class="card__background card-background">
-                    <div class="card__background--mac background--mac">
-                        <img src="resources/Header/mac_buttons.png" alt="">
-                        <textarea class="codigo__area codigo-area" disabled name="" id=""></textarea>
+            <!-- ================ Cabecalho Desktop ================ -->
+            <input type="text" class="cabecalho__pesquisa input" placeholder="Busque por algo">
+            <div class="cabecalho__usuario">
+                <a href="#" class="cabecalho__usuario--link">
+                    <img src="./resources/Header/Photo.png" alt="" class="cabecalho__usuario--foto">
+                    <h3 class="cabecalho__usuario--nome">Harry</h3>
+                </a>
+            </div>
+        </header>
+        <main class="conteudo container">
+            <aside class="conteudo__menu">
+                <nav class="conteudo__menu--navegacao">
+                    <h3 class="conteudo__menu--titulo titulo__sidebar">MENU</h3>
+                    <div class="conteudo__menu--item">
+                        <a href="./user.html" class="conteudo__menu--icone button"><i
+                                class='bx bx-code-alt'></i></a>
+                        <a href="./user.html" class="conteudo__menu--descricao">Editor de
+                            código</a>
                     </div>
-                </div>
-                <h3 class="titulo__projeto titulo-projeto">Titulo do projeto</h3>
-                <p class="descricao__projeto descricao-projeto">Essa é a descrição do meu projeto</p>
-                <a href="#" class="comentarios-projeto">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <p class="comentarios__projeto-count">9</p>
-                </a>
-                <a href="#" class="curtidas-projeto">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <p class="curtidas__projeto-count">9</p>
-                </a>
-                <a href="#" class="perfil perfil-user">
-                    <img class="img__perfil" src="resources/Header/Photo.png" alt="">
-                    <p class="user__projeto">@Harry</p>
-                </a>
-            </article>
-
-            <article class="card">
-                <div class="card__background card-background">
-                    <div class="card__background--mac background--mac">
-                        <img src="resources/Header/mac_buttons.png" alt="">
-                        <textarea class="codigo__area codigo-area" disabled  name="" id=""></textarea>
+                    <div class="conteudo__menu--item">
+                        <a href="./comunidade.html" class="conteudo__menu--icone conteudo__menu--icone-active button"><i class='bx bx-group'></i></a>
+                        <a href="./comunidade.html" class="conteudo__menu--descricao conteudo__menu--descricao-active">Comunidade</a>
                     </div>
-                </div>
-                <h3 class="titulo__projeto titulo-projeto">Titulo do projeto</h3>
-                <p class="descricao__projeto descricao-projeto">Essa é a descrição do meu projeto</p>
-                <a href="#" class="comentarios-projeto">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <p class="comentarios__projeto-count">9</p>
-                </a>
-                <a href="#" class="curtidas-projeto">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <p class="curtidas__projeto-count">9</p>
-                </a>
-                <a href="#" class="perfil perfil-user">
-                    <img class="img__perfil" src="resources/Header/Photo.png" alt="">
-                    <p class="user__projeto">@Harry</p>
-                </a>
-            </article>
+                </nav>
+            </aside>
+            <section class="comunidade">
 
-            <article class="card">
-                <div class="card__background card-background">
-                    <div class="card__background--mac background--mac">
-                        <img src="resources/Header/mac_buttons.png" alt="">
-                        <textarea class="codigo__area codigo-area" disabled name="" id=""></textarea>
+                <article class="comunidade__conteudo">
+                    <div class="comunidade__conteudo--background">
+                        <div class="comunidade__conteudo--tela">
+                            <img class="comunidade__tela--macbook" src="./resources/Header/mac_buttons.png" alt="">
+                            <textarea name="codigo" id="codigo" class="comunidade__conteudo--codigo" disabled>
+
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+                            </textarea>
+                        </div>
                     </div>
-                </div>
-                <h3 class="titulo__projeto titulo-projeto">Titulo do projeto</h3>
-                <p class="descricao__projeto descricao-projeto">Essa é a descrição do meu projeto</p>
-                <a href="#" class="comentarios-projeto">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <p class="comentarios__projeto-count">9</p>
-                </a>
-                <a href="#" class="curtidas-projeto">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <p class="curtidas__projeto-count">9</p>
-                </a>
-                <a href="#" class="perfil perfil-user">
-                    <img class="img__perfil" src="resources/Header/Photo.png" alt="">
-                    <p class="user__projeto">@Harry</p>
-                </a>
-            </article>
-
-            <article class="card">
-                <div class="card__background card-background">
-                    <div class="card__background--mac background--mac">
-                        <img src="resources/Header/mac_buttons.png" alt="">
-                        <textarea class="codigo__area codigo-area" disabled  name="" id=""></textarea>
+                    <div class="comunidade__conteudo--cabecalho container">
+                        <h2 class="comunidade__conteudo--titulo">Titulo do projeto</h2>
+                        <p class="comunidade__conteudo--descricao">Descricao do projeto</p>
+                        <div class="comunidade__informacoes">
+                            <div class="comunidade__informacoes--interacao">
+                                <div class="comunidade__informacoes--comentarios">
+                                    <a href="" class="interacao__comentario"><i class='bx bxs-message-rounded'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                                <div class="comunidade__informacoes--curtidas">
+                                    <a href="" class="interacao__curtida"> <i class='bx bxs-heart'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                            </div>
+                            <div class="comunidade__informacoes--usuario">
+                                <a href="#" class="usuario__link">
+                                    <img src="./resources/Header/Photo.png" alt="" class="usuario__link--imagem">
+                                    <h3 class="usuario__link--nome">@Harry</h3>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <h3 class="titulo__projeto titulo-projeto">Titulo do projeto</h3>
-                <p class="descricao__projeto descricao-projeto">Essa é a descrição do meu projeto</p>
-                <a href="#" class="comentarios-projeto">
-                    <i class="fa fa-comment" aria-hidden="true"></i>
-                    <p class="comentarios__projeto-count">9</p>
-                </a>
-                <a href="#" class="curtidas-projeto">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <p class="curtidas__projeto-count">9</p>
-                </a>
-                <a href="#" class="perfil perfil-user">
-                    <img class="img__perfil" src="resources/Header/Photo.png" alt="">
-                    <p class="user__projeto">@Harry</p>
-                </a>
-            </article>
-        </section>
+                </article>
 
-    </main>
+                <article class="comunidade__conteudo">
+                    <div class="comunidade__conteudo--background">
+                        <div class="comunidade__conteudo--tela">
+                            <img class="comunidade__tela--macbook" src="./resources/Header/mac_buttons.png" alt="">
+                            <textarea name="codigo" id="codigo" class="comunidade__conteudo--codigo" disabled>
 
-</body>
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #18181c;
+	display: flex;
+	align-items: center;
+
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="comunidade__conteudo--cabecalho container">
+                        <h2 class="comunidade__conteudo--titulo">Titulo do projeto</h2>
+                        <p class="comunidade__conteudo--descricao">Descricao do projeto</p>
+                        <div class="comunidade__informacoes">
+                            <div class="comunidade__informacoes--interacao">
+                                <div class="comunidade__informacoes--comentarios">
+                                    <a href="" class="interacao__comentario"><i class='bx bxs-message-rounded'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                                <div class="comunidade__informacoes--curtidas">
+                                    <a href="" class="interacao__curtida"> <i class='bx bxs-heart'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                            </div>
+                            <div class="comunidade__informacoes--usuario">
+                                <a href="#" class="usuario__link">
+                                    <img src="./resources/Header/Photo.png" alt="" class="usuario__link--imagem">
+                                    <h3 class="usuario__link--nome">@Harry</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comunidade__conteudo">
+                    <div class="comunidade__conteudo--background">
+                        <div class="comunidade__conteudo--tela">
+                            <img class="comunidade__tela--macbook" src="./resources/Header/mac_buttons.png" alt="">
+                            <textarea name="codigo" id="codigo" class="comunidade__conteudo--codigo" disabled>
+
+let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
+
+// LANDSCAPE / PORTRAIT
+
+let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+let windowRatio = window.innerWidth / window.innerHeight;
+let isLandscape = (windowRatio > 1) ? true : false;
+
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="comunidade__conteudo--cabecalho container">
+                        <h2 class="comunidade__conteudo--titulo">Titulo do projeto</h2>
+                        <p class="comunidade__conteudo--descricao">Descricao do projeto</p>
+                        <div class="comunidade__informacoes">
+                            <div class="comunidade__informacoes--interacao">
+                                <div class="comunidade__informacoes--comentarios">
+                                    <a href="" class="interacao__comentario"><i class='bx bxs-message-rounded'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                                <div class="comunidade__informacoes--curtidas">
+                                    <a href="" class="interacao__curtida"> <i class='bx bxs-heart'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                            </div>
+                            <div class="comunidade__informacoes--usuario">
+                                <a href="#" class="usuario__link">
+                                    <img src="./resources/Header/Photo.png" alt="" class="usuario__link--imagem">
+                                    <h3 class="usuario__link--nome">@Harry</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comunidade__conteudo">
+                    <div class="comunidade__conteudo--background">
+                        <div class="comunidade__conteudo--tela">
+                            <img class="comunidade__tela--macbook" src="./resources/Header/mac_buttons.png" alt="">
+                            <textarea name="codigo" id="codigo" class="comunidade__conteudo--codigo" disabled>
+
+<!-- page heading -->
+<div class='container container-dark p-y-md'>
+    <div class='header-content'>
+      <h1>Material Search Animation</h1>
+      <h2>Usign CSS Transitions</h2>
+    </div>
+  </div>
+  
+<!-- page content + floating button -->
+  <div class='container p-y-md'>
+    <div class='control'>
+      <div class='btn-material'></div>
+  
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="comunidade__conteudo--cabecalho container">
+                        <h2 class="comunidade__conteudo--titulo">Titulo do projeto</h2>
+                        <p class="comunidade__conteudo--descricao">Descricao do projeto</p>
+                        <div class="comunidade__informacoes">
+                            <div class="comunidade__informacoes--interacao">
+                                <div class="comunidade__informacoes--comentarios">
+                                    <a href="" class="interacao__comentario"><i class='bx bxs-message-rounded'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                                <div class="comunidade__informacoes--curtidas">
+                                    <a href="" class="interacao__curtida"> <i class='bx bxs-heart'></i></a>
+                                    <p class="numero__interacoes">9</p>
+                                </div>
+                            </div>
+                            <div class="comunidade__informacoes--usuario">
+                                <a href="#" class="usuario__link">
+                                    <img src="./resources/Header/Photo.png" alt="" class="usuario__link--imagem">
+                                    <h3 class="usuario__link--nome">@Harry</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+            </section>
+        </main>
+    </body>
 </html>
