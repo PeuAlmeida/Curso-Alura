@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+.cabecalho {
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho__menu {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__itens {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu__item {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid white;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.ativa {
+    color: red;
+    background-color: white;
+}
