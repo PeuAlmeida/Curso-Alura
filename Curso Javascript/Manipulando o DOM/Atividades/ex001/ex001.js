@@ -1,0 +1,1 @@
+document.querySelector('#texto').innerHTML = 'The winter is coming';
