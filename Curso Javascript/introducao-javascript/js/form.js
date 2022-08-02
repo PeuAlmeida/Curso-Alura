@@ -25,6 +25,4 @@ function obtemPacienteDoFormulario(form) {
     return(paciente)
 }
 
-validaPaciente()
-
 // validaPaciente()

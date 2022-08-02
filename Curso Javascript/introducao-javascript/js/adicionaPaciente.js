@@ -2,7 +2,13 @@ function adicionaPacienteNaTabela(paciente) {
     
     const tabela = document.querySelector('#tabela-pacientes')
 
+    if (!validaPaciente(paciente)) {
+        console.log('paciente invalido')
+        return
+    }
+    
     tabela.appendChild(montaTr(paciente))
+
 }
 
 function montaTr(paciente) {
